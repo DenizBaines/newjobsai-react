@@ -21,7 +21,7 @@ import DataScience from './components/courses/DataScience';
 
 function App() {
   return (
-    <BrowserRouter basename="/newjobs">
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
 
       <Routes>
         <Route path="/" element={<Homepage />} />
