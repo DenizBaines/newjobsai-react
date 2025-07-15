@@ -1,0 +1,88 @@
+.upbatch-container {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+}
+
+.heading {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  font-weight: 600;
+  color: #222;
+}
+
+.batch-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.batch-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.batch-card:hover {
+  transform: translateY(-5px);
+}
+
+.batch-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.batch-info {
+  padding: 20px;
+}
+
+.batch-info h3 {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.batch-info p {
+  margin: 4px 0;
+  font-size: 0.95rem;
+  color: #666;
+}
+
+.enquire-btn {
+  margin-top: 15px;
+  background-color: #004080;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.enquire-btn:hover {
+  background-color: #0059b3;
+}
+
+
+
+
+.batch-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Always 2 columns */
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+  .batch-grid {
+    grid-template-columns: 1fr; /* Stack on smaller screens */
+  }
+}

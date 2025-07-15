@@ -1,0 +1,85 @@
+/* src/components/testimonials/Testimonials.css */
+
+.testimonial-page {
+  padding: 80px 20px;
+  background-color: #f4f9ff;
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.testimonial-heading {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #2c5aa0;
+  margin-bottom: 10px;
+}
+
+.testimonial-subtext {
+  color: #666;
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+}
+
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.testimonial-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 30px 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.student-img {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #2c5aa0;
+  margin-bottom: 15px;
+}
+
+.testimonial-card h3 {
+  font-size: 1.3rem;
+  color: #2c5aa0;
+  margin: 5px 0;
+}
+
+.testimonial-card h4 {
+  font-size: 1rem;
+  color: #888;
+  margin-bottom: 15px;
+}
+
+.testimonial-text {
+  font-size: 1rem;
+  color: #333;
+  font-style: italic;
+  line-height: 1.6;
+}
+
+/* Responsive Tweaks */
+@media (max-width: 768px) {
+  .testimonial-heading {
+    font-size: 2rem;
+  }
+
+  .testimonial-text {
+    font-size: 0.95rem;
+  }
+
+    .testimonial-grid {
+        grid-template-columns: 1fr;
+    }
+}

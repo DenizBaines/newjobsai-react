@@ -1,0 +1,75 @@
+.training-page {
+  font-family: 'Poppins', sans-serif;
+  padding: 100px 20px 60px;
+  background: #f9f9f9;
+}
+
+.training-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.training-header h1 {
+  font-size: 2.5rem;
+  color: #2c5aa0;
+}
+
+.training-header hr {
+  width: 80px;
+  height: 3px;
+  background: #2c5aa0;
+  margin: 10px auto;
+  border: none;
+}
+
+.training-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.training-card {
+  padding: 25px;
+  border-radius: 15px;
+  color: #fff;
+  font-size: 0.95rem;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.training-card h3 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* City-specific colors */
+.training-card.blue {
+  background-color: #1656a3;
+}
+
+.training-card.red {
+  background-color: #b02a2a;
+}
+
+.training-card.green {
+  background-color: #3ba935;
+}
+
+.training-card:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .training-header h1 {
+    font-size: 2rem;
+  }
+
+  .training-card {
+    font-size: 0.9rem;
+  }
+}

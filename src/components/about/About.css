@@ -1,0 +1,237 @@
+.about-page {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f7fafd;
+  padding-top: 80px;
+}
+
+/* Hero Image */
+.hero-image-wrapper {
+  width: 100%;
+  max-height: 100vh;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.hero-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-bottom: 4px solid #2c5aa0;
+}
+
+/* About Text */
+.about-hero {
+  max-width: 1000px;
+  margin: 40px auto;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.about-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #2c5aa0;
+  margin-bottom: 20px;
+}
+
+.about-description {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #444;
+}
+
+/* Mission Section */
+.mission-section {
+  background: #ffffff;
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto 60px;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+}
+
+.mission-section h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #2c5aa0;
+  text-align: center;
+}
+
+.mission-section p {
+  text-align: center;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+/* Grid Cards */
+.mission-features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+}
+
+.feature-card {
+  background: linear-gradient(145deg, #e8f0ff, #f5faff);
+  border-left: 5px solid #2c5aa0;
+  padding: 25px;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+.feature-card:hover {
+  transform: translateY(-6px);
+}
+
+.feature-icon {
+  font-size: 2rem;
+  color: #2c5aa0;
+  margin-bottom: 15px;
+}
+
+/* Testimonials */
+.testimonials-section {
+  max-width: 800px;
+  margin: 0 auto 60px;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.testimonials-section h2 {
+  font-size: 2rem;
+  color: #2c5aa0;
+  margin-bottom: 30px;
+}
+
+.testimonial-carousel {
+  background: #fff;
+  padding: 30px 20px;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+  transition: opacity 0.6s ease-in-out;
+  opacity: 1;
+  min-height: 250px;
+}
+
+.testimonial-carousel.fade {
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.97); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.testimonial-carousel img.testimonial-img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  border: 2px solid #2c5aa0;
+}
+
+.testimonial-carousel p {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.testimonial-carousel span {
+  font-weight: bold;
+  color: #666;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-title {
+    font-size: 2rem;
+  }
+
+  .mission-section h2,
+  .testimonials-section h2 {
+    font-size: 1.6rem;
+  }
+}
+
+
+/* Carousel Container */
+.testimonial-carousel-container {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto 60px;
+  overflow: hidden;
+  padding: 0 20px;
+}
+
+.testimonial-slider {
+  display: flex;
+  transition: transform 0.6s ease-in-out;
+}
+
+.testimonial-slide {
+  display: flex;
+  width: 100%;
+}
+
+.testimonial-card {
+  min-width: 100%;
+  background: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+.testimonial-img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  border: 2px solid #2c5aa0;
+}
+
+.testimonial-card p {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.testimonial-card span {
+  font-weight: bold;
+  color: #666;
+}
+
+/* Arrows */
+.carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #2c5aa0;
+  color: white;
+  border: none;
+  font-size: 1.5rem;
+  padding: 8px 14px;
+  cursor: pointer;
+  z-index: 10;
+  border-radius: 50%;
+  transition: background 0.3s ease;
+}
+
+.carousel-arrow:hover {
+  background: #17407b;
+}
+
+.carousel-arrow.left {
+  left: 10px;
+}
+
+.carousel-arrow.right {
+  right: 10px;
+}

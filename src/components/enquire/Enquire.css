@@ -1,0 +1,466 @@
+/* Enquire Form Styles */
+.newjobs-enquire-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 2rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.newjobs-enquire-wrapper {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Header Section */
+.newjobs-enquire-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  animation: newjobs-fade-in-up 0.8s ease-out;
+}
+
+.newjobs-enquire-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 1rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.newjobs-enquire-subtitle {
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.9);
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Content Layout */
+.newjobs-enquire-content {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+/* Info Cards */
+.newjobs-enquire-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.newjobs-info-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  padding: 1.5rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  animation: newjobs-fade-in-left 0.8s ease-out;
+}
+
+.newjobs-info-card:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.newjobs-info-icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.newjobs-info-card h3 {
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.newjobs-info-card p {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+/* Form Styles */
+.newjobs-enquire-form {
+  background: white;
+  border-radius: 20px;
+  padding: 2.5rem;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+  animation: newjobs-fade-in-right 0.8s ease-out;
+}
+
+.newjobs-form-status {
+  padding: 1rem;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.newjobs-form-status.success {
+  background: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.newjobs-form-status.error {
+  background: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+.newjobs-form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.newjobs-form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.newjobs-form-label {
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.newjobs-form-input,
+.newjobs-form-select,
+.newjobs-form-textarea {
+  padding: 0.875rem 1rem;
+  border: 2px solid #e1e8ed;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  background: #fafbfc;
+  font-family: inherit;
+}
+
+.newjobs-form-input:focus,
+.newjobs-form-select:focus,
+.newjobs-form-textarea:focus {
+  outline: none;
+  border-color: #667eea;
+  background: white;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+  transform: translateY(-1px);
+}
+
+.newjobs-form-input.error,
+.newjobs-form-select.error,
+.newjobs-form-textarea.error {
+  border-color: #e74c3c;
+  background: #fdf2f2;
+}
+
+.newjobs-form-textarea {
+  resize: vertical;
+  min-height: 120px;
+  font-family: inherit;
+}
+
+.newjobs-form-error {
+  color: #e74c3c;
+  font-size: 0.85rem;
+  margin-top: 0.25rem;
+  font-weight: 500;
+}
+
+.newjobs-form-submit {
+  width: 100%;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.newjobs-form-submit:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+}
+
+.newjobs-form-submit:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.newjobs-spinner {
+  width: 20px;
+  height: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-top: 2px solid white;
+  border-radius: 50%;
+  animation: newjobs-spin 1s linear infinite;
+}
+
+.newjobs-form-note {
+  text-align: center;
+  color: #6c757d;
+  font-size: 0.85rem;
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
+/* Animations */
+@keyframes newjobs-fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes newjobs-fade-in-left {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes newjobs-fade-in-right {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes newjobs-spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Tablet Styles */
+@media (max-width: 1024px) {
+  .newjobs-enquire-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .newjobs-enquire-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  
+  .newjobs-enquire-title {
+    font-size: 2.5rem;
+  }
+  
+  .newjobs-enquire-form {
+    padding: 2rem;
+  }
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .newjobs-enquire-container {
+    padding: 1rem 0;
+  }
+  
+  .newjobs-enquire-wrapper {
+    padding: 0 1rem;
+  }
+  
+  .newjobs-enquire-title {
+    font-size: 2rem;
+  }
+  
+  .newjobs-enquire-subtitle {
+    font-size: 1rem;
+  }
+  
+  .newjobs-enquire-info {
+    grid-template-columns: 1fr;
+  }
+  
+  .newjobs-form-row {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .newjobs-enquire-form {
+    padding: 1.5rem;
+  }
+  
+  .newjobs-info-card {
+    padding: 1rem;
+  }
+  
+  .newjobs-info-icon {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+/* Small Mobile Styles */
+@media (max-width: 480px) {
+  .newjobs-enquire-header {
+    margin-bottom: 2rem;
+  }
+  
+  .newjobs-enquire-title {
+    font-size: 1.8rem;
+  }
+  
+  .newjobs-enquire-form {
+    padding: 1rem;
+    border-radius: 15px;
+  }
+  
+  .newjobs-form-input,
+  .newjobs-form-select,
+  .newjobs-form-textarea {
+    padding: 0.75rem;
+    font-size: 0.95rem;
+  }
+  
+  .newjobs-form-submit {
+    padding: 0.875rem 1.5rem;
+    font-size: 1rem;
+  }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Focus styles for better accessibility */
+.newjobs-form-input:focus,
+.newjobs-form-select:focus,
+.newjobs-form-textarea:focus,
+.newjobs-form-submit:focus {
+  outline: 2px solid #667eea;
+  outline-offset: 2px;
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .newjobs-enquire-container {
+    background: #000;
+  }
+  
+  .newjobs-enquire-form {
+    border: 2px solid #333;
+  }
+  
+  .newjobs-form-input,
+  .newjobs-form-select,
+  .newjobs-form-textarea {
+    border-color: #333;
+    background: white;
+  }
+}
+
+
+.enquire-container {
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: auto;
+  background: #f9f9f9;
+  border-radius: 10px;
+}
+
+.enquire-heading {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #2c5aa0;
+}
+
+.enquire-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.form-row input {
+  flex: 1;
+  padding: 12px 16px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+textarea {
+  padding: 12px 16px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  resize: vertical;
+}
+
+.submit-btn {
+  background: #2c5aa0;
+  color: white;
+  padding: 14px 30px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.submit-btn:hover {
+  background: #1f4170;
+}
+
+.submit-msg {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.submit-msg.success {
+  color: green;
+}
+
+.submit-msg.error {
+  color: red;
+}

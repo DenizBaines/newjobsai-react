@@ -1,0 +1,375 @@
+/* Enhanced Navbar Styles */
+.newjobs-navbar-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+}
+
+.newjobs-navbar-visible {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.newjobs-navbar-hidden {
+  transform: translateY(-100%);
+  opacity: 0;
+}
+
+.newjobs-nav-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  position: relative;
+}
+
+/* Brand Section */
+.newjobs-brand-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  z-index: 1001;
+  cursor: pointer;
+}
+
+.newjobs-brand-primary {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #2c3e50;
+  font-family: 'Arial', sans-serif;
+  letter-spacing: -0.5px;
+}
+
+.hero-cta-hs {
+  background: #6c63ff;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.hero-cta-hs:hover {
+  background: #5a52d5;
+}
+
+.newjobs-brand-secondary {
+  margin-top: -0.2rem;
+}
+
+.newjobs-academy-text {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  background: linear-gradient(45deg, #3498db, #e74c3c, #f39c12, #2ecc71);
+  background-size: 300% 300%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: newjobs-gradient-shift 3s ease-in-out infinite;
+}
+
+@keyframes newjobs-gradient-shift {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+/* Navigation Menu */
+.newjobs-navigation-menu {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.newjobs-nav-item {
+  color: #2c3e50;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  position: relative;
+  cursor: pointer;
+  padding: 0.5rem 0;
+}
+
+.newjobs-nav-item:hover {
+  color: #3498db;
+  transform: translateY(-1px);
+}
+
+.newjobs-nav-item::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(45deg, #3498db, #2ecc71);
+  transition: width 0.3s ease;
+}
+
+.newjobs-nav-item:hover::after {
+  width: 100%;
+}
+
+/* Dropdown */
+.newjobs-dropdown-trigger {
+  position: relative;
+}
+
+.newjobs-dropdown-content {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  padding: 1rem 0;
+  min-width: 200px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 1002;
+}
+
+.newjobs-dropdown-trigger:hover .newjobs-dropdown-content {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.newjobs-dropdown-content a {
+  display: block;
+  padding: 0.75rem 1.5rem;
+  color: #2c3e50;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.newjobs-dropdown-content a:hover {
+  background: #f8f9fa;
+  color: #3498db;
+  transform: translateX(5px);
+}
+
+/* CTA Button */
+.newjobs-cta-button {
+  background: linear-gradient(45deg, #3498db, #2ecc71);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3);
+}
+
+.newjobs-cta-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(52, 152, 219, 0.4);
+  background: linear-gradient(45deg, #2980b9, #27ae60);
+}
+
+/* Hamburger Menu */
+.newjobs-hamburger-btn {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px;
+  height: 30px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 1001;
+}
+
+.newjobs-hamburger-line {
+  width: 100%;
+  height: 3px;
+  background: #2c3e50;
+  border-radius: 2px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transform-origin: center;
+}
+
+.newjobs-hamburger-active .newjobs-hamburger-line:nth-child(1) {
+  transform: rotate(45deg) translateY(9px);
+}
+
+.newjobs-hamburger-active .newjobs-hamburger-line:nth-child(2) {
+  opacity: 0;
+  transform: scaleX(0);
+}
+
+.newjobs-hamburger-active .newjobs-hamburger-line:nth-child(3) {
+  transform: rotate(-45deg) translateY(-9px);
+}
+
+/* Mobile Overlay */
+.newjobs-mobile-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  z-index: 999;
+}
+
+.newjobs-overlay-active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Tablet Styles */
+@media (max-width: 1024px) {
+  .newjobs-nav-wrapper {
+    padding: 1rem 1.5rem;
+  }
+  
+  .newjobs-navigation-menu {
+    gap: 1.5rem;
+  }
+  
+  .newjobs-nav-item {
+    font-size: 0.9rem;
+  }
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .newjobs-hamburger-btn {
+    display: flex;
+  }
+  
+  .newjobs-cta-button {
+    display: none;
+  }
+  
+  .newjobs-navigation-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 280px;
+    height: 100vh;
+    background: white;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 6rem 2rem 2rem;
+    gap: 1.5rem;
+    transition: right 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: -5px 0 25px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+  
+  .newjobs-mobile-menu-active {
+    right: 0;
+  }
+  
+  .newjobs-nav-item {
+    font-size: 1.1rem;
+    padding: 1rem 0;
+    width: 100%;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .newjobs-nav-item:last-child {
+    border-bottom: none;
+  }
+  
+  .newjobs-dropdown-content {
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    box-shadow: none;
+    background: #f8f9fa;
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+    border-radius: 4px;
+  }
+  
+  .newjobs-dropdown-content a {
+    padding: 0.5rem 1rem;
+    font-size: 0.95rem;
+  }
+  
+  .newjobs-brand-primary {
+    font-size: 1.6rem;
+  }
+  
+  .newjobs-academy-text {
+    font-size: 0.65rem;
+  }
+}
+
+/* Small Mobile Styles */
+@media (max-width: 480px) {
+  .newjobs-nav-wrapper {
+    padding: 1rem;
+  }
+  
+  .newjobs-brand-primary {
+    font-size: 1.4rem;
+  }
+  
+  .newjobs-academy-text {
+    font-size: 0.6rem;
+    letter-spacing: 1.5px;
+  }
+  
+  .newjobs-navigation-menu {
+    width: 100%;
+    right: -100%;
+  }
+}
+
+/* Smooth scroll behavior for the entire page */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Ensure proper spacing for fixed navbar */
+body {
+  padding-top: 80px;
+}
+
+/* Animation for better UX */
+@keyframes newjobs-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.newjobs-navbar-header {
+  animation: newjobs-fade-in 0.6s ease-out;
+}
