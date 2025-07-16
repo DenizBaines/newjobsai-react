@@ -41,7 +41,7 @@ const Gallery = () => {
         <div className="gallery-grid">
           {images.map((img, idx) => (
             <div className="gallery-item" key={idx} onClick={() => openModal(img)}>
-              <img src={img} alt={`Gallery ${idx + 1}`} />
+              <img src={img} alt={`Gallery ${idx + 1}`} loading="lazy" />
             </div>
           ))}
         </div>
@@ -62,3 +62,6 @@ const Gallery = () => {
 };
 
 export default Gallery;
+
+
+// Akela Pan khaye Jaa raha hai mujhe, and iska koi fix solution bhi nahi hai. 

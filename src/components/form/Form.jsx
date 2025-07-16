@@ -146,7 +146,7 @@ function FormToSheet() {
             <div className="info-card">
               <div className="info-icon">🚀</div>
               <h3>Quick & Easy</h3>
-              <p>Simple form that takes less than 30 seconds to complete</p>
+              <p>Fill the form to know more details about the required course</p>
             </div>
             
             <div className="info-card">
@@ -158,7 +158,7 @@ function FormToSheet() {
             <div className="info-card">
               <div className="info-icon">📧</div>
               <h3>Stay Updated</h3>
-              <p>Get notifications about new features and updates</p>
+              <p>Get notifications about new courses and updates</p>
             </div>
           </div>
 
@@ -171,7 +171,7 @@ function FormToSheet() {
 
             <div className="form-group">
               <label htmlFor="name" className="form-label">
-                Full Name *
+                Full Name 
               </label>
               <input
                 type="text"
@@ -187,7 +187,7 @@ function FormToSheet() {
 
             <div className="form-group">
               <label htmlFor="email" className="form-label">
-                Email Address *
+                Email Address 
               </label>
               <input
                 type="email"

@@ -18,11 +18,14 @@ import Testimonials from './components/testimonials/Testimonials';
 import Gallery from './components/gallery/Gallery';
 import Form from './components/form/Form';
 import DataScience from './components/courses/DataScience';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   return (
     <BrowserRouter basename={process.env.PUBLIC_URL}>
 
+     <>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/about" element={<About />} />
@@ -43,6 +46,7 @@ function App() {
         <Route path="/about" element={<About />} />
          */ /* <Route path="/contact" element={<Contact />} /> */}
       </Routes>
+      </>
     </BrowserRouter>
   );
 }

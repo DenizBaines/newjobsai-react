@@ -53,13 +53,13 @@ const Homepage = () => {
             </h1>
             
             
-
+            <div className="parent-container-button">
             <Link to="form">
-               <button className="hero-cta-hs">
+               <button className="hero-cta-hs-button">
                    Enquire Now!!
                </button>
             </Link>
-
+            </div>
 
           </div>
           <div className="hero-visual-hs">

@@ -127,7 +127,7 @@ body {
   margin-bottom: 2rem;
 }
 
-.hero-cta-hs {
+.hero-cta-hs-button {
   text-decoration: none;
   background: #6c63ff;
   color: white;
@@ -697,6 +697,8 @@ body {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  
+
   .upskill-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -735,6 +737,24 @@ body {
   .hero-title {
     font-size: 2rem;
   }
+
+  .hero-cta-hs-button {
+  text-decoration: none;
+  text-align: center;
+  padding: 10px 20px;
+  justify-content: center;
+}
+
+
+    .parent-container-button {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* optional: for vertical centering */
+}
+
+  
+
+
 
   .section-title {
     font-size: 1.8rem;

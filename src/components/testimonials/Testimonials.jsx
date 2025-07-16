@@ -12,7 +12,7 @@ const studentTestimonials = [
   {
     name: 'Mukesh',
     course: 'Marketing',
-    image: '${process.env.PUBLIC_URL/images/students/Mukesh.jpg',
+    image: '/images/students/Mukesh.jpg',
     testimonial: "NewJobs.ai was definitely a paradise for students who aspire to achieve par excellence in the field of Marketing. With an astute attention to detail, backed up by current market trends, marketing and various techniques have been made interesting by the faculty of NewJobs.ai."
   },
   {
