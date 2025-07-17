@@ -61,7 +61,7 @@ const Contact = () => {
           <p>We look forward to hearing from you!</p>
           </div>
           <br />
-          <button className="enquire-btn" onClick={() => navigate('/enquire')}>
+          <button className="enquire-btn" onClick={() => navigate('/form')}>
             Enquire Now
           </button>
         </div>

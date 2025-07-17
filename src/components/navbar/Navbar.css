@@ -45,7 +45,7 @@
 .newjobs-brand-primary {
   font-size: 1.8rem;
   font-weight: 700;
-  color: #764ba2;
+  color: #1f456e;
   font-family: 'Arial', sans-serif;
   letter-spacing: -0.5px;
 }
@@ -254,7 +254,7 @@
   }
   
   .newjobs-navigation-menu {
-    gap: 1.5rem;
+    gap: 1.3rem;
   }
   
   .newjobs-nav-item {
@@ -287,7 +287,7 @@
     justify-content: flex-start;
     align-items: flex-start;
     padding: 6rem 2rem 2rem;
-    gap: 1.5rem;
+    gap: 1rem;
     transition: right 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     box-shadow: -5px 0 25px rgba(0, 0, 0, 0.1);
     z-index: 1000;
@@ -363,6 +363,9 @@
   .newjobs-navigation-menu {
     width: 100%;
     right: -100%;
+    padding: 4rem 1.5rem 2rem;
+    size: 0.2rem;
+    gap: 0.8rem;
   }
 }
 
