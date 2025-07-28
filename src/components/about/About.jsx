@@ -16,7 +16,7 @@ const About = () => {
       <Navbar />
 
       <div className="hero-image-wrapper">
-          <img src="images/homepage/about-hero.jpg" alt="About Us Banner" className="hero-image" />
+          <img src="/newjobs/images/homepage/about.png" alt="About Us Banner" className="hero-image" />
         </div>
 
       <div className="about-page">

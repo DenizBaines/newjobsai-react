@@ -97,7 +97,7 @@ const Homepage = () => {
                   <li>✓ Google Analytics</li>
                   <li>✓ Online Reputation Management</li>
                 </ul>
-                <Link to='/master-data-science'>
+                <Link to='/form'>
                     <button className="program-btn">Know More</button>
                 </Link>
               </div>
@@ -116,7 +116,9 @@ const Homepage = () => {
                   <li>✓ SQL</li>
                   <li>✓ Image Detection through Computer Vision</li>
                 </ul>
+                <Link to='/form'>
                 <button className="program-btn">Know More</button>
+                </Link>
               </div>
             </div>
           </div>
@@ -140,7 +142,9 @@ const Homepage = () => {
                   <li>✓ Social Algorithm</li>
                   <li>✓ Email Marketing techniques</li>
                 </ul>
+                <Link to='/form'>
                 <button className="program-btn">Know More</button>
+                </Link>
               </div>
             </div>
 
@@ -155,7 +159,9 @@ const Homepage = () => {
                   <li>✓ Excel as a Business Analytics Tool</li>
                   <li>✓ Power BI – Analyse and visualize your</li>
                 </ul>
+                <Link to='/form'>
                 <button className="program-btn">Know More</button>
+                </Link>
               </div>
             </div>
 
@@ -170,7 +176,9 @@ const Homepage = () => {
                   <li>✓ R programming</li>
                   <li>✓ Python Programming</li>
                 </ul>
+                <Link to='/form'>
                 <button className="program-btn">Know More</button>
+                </Link>
               </div>
             </div>
           </div>
@@ -186,10 +194,18 @@ const Homepage = () => {
           </p>
           
           <div className="certification-logos">
-            <div className="cert-logo ftec"></div>
-            <div className="cert-logo nsdc"></div>
-            <div className="cert-logo skill-council"></div>
-            <div className="cert-logo nasscom"></div>
+            <div className="cert-logo ftec">
+              <img src="/newjobs/images/dual/ftec.png" alt="FTE Logo" />
+            </div>
+            <div className="cert-logo nsdc">
+              <img src="/newjobs/images/dual/nsdc.png" alt="NSDC Logo" />
+            </div>
+            <div className="cert-logo skill-council">
+              <img src="/newjobs/images/dual/mesc.png" alt="Skill Council Logo" />
+            </div>
+            <div className="cert-logo nasscom">
+              <img src="/newjobs/images/dual/nasscom.png" alt="NASSCOM Logo" />
+            </div>
           </div>
         </div>
       </section>

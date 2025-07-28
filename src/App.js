@@ -1,4 +1,8 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
+
+// Comment Down - import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+
 
 // import Courses from './pages/Courses';
 // import About from './pages/About';
@@ -22,7 +26,7 @@ import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   return (
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <Router>
 
      <>
       <ScrollToTop />
@@ -41,13 +45,14 @@ function App() {
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/form" element={<Form />} />
          <Route path="/master-data-science" element={<DataScience />} />
+         
 
        {/* <Route path="/courses" element={<Courses />} />
         <Route path="/about" element={<About />} />
          */ /* <Route path="/contact" element={<Contact />} /> */}
       </Routes>
       </>
-    </BrowserRouter>
+    </Router>
   );
 }
 export default App;

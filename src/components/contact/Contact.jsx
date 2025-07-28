@@ -14,7 +14,7 @@ const Contact = () => {
 
         {/* Hero Image */}
         <div className="contact-hero-image">
-          <img src="images/homepage/contact-hero.jpg" alt="Contact Us" />
+          <img src="./newjobs/images/homepage/contact-hero.jpg" alt="Contact Us" />
         </div>
 
         {/* Contact Grid */}

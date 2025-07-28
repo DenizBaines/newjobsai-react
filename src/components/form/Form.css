@@ -20,6 +20,7 @@
   text-align: center;
   margin-bottom: 3rem;
   animation: fade-in-up 0.8s ease-out;
+  margin-top: 80px; /* Adjusted for fixed navbar */
 }
 
 .form-title {

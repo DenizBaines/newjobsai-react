@@ -1,18 +1,20 @@
 .about-page {
   font-family: 'Segoe UI', sans-serif;
   background-color: #f7fafd;
-  padding-top: 80px;
+  padding-top: 60px;
 }
 
 /* Hero Image */
 .hero-image-wrapper {
   width: 100%;
-  max-height: 100vh;
+  max-height: 70vh;
   overflow: hidden;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 60px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   
 }
 

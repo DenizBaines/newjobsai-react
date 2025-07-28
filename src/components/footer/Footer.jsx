@@ -16,19 +16,19 @@ const Footer = () => {
           <h3>Quick Links</h3>
           <ul>
             <li><Link to="/">Home</Link></li>
-            <li><a href="/about">About Us</a></li>
-            <li><a href="/advisors">Advisory Board</a></li>
+            <li><Link to="/about">About Us</Link></li>
+            <li><Link to="/advisors">Advisory Board</Link></li>
            
             <li><Link to="/testimonials">Our Students</Link></li>
-            <li><a href="/courses">Courses</a></li>
+           {/* <li><Link to="/courses">Courses</Link></li> */}
             <li><Link to="/gallery">Gallery</Link></li>
-            <li><a href="/contact">Contact</a></li>
+            <li><Link to="/contact">Contact</Link></li>
           </ul>
         </div>
 
         <div className="footer-col">
           <h3>Contact</h3>
-          <p>AB-6, First Floor, Safdarjung Enclave, Delhi - 110029</p>
+          <p>AB-6, First Floor, <br />Safdarjung Enclave, <br />Delhi - 110029</p>
           <p><a href="mailto:info@newjobs.ai">admissions@newjobs.ai</a></p>
           {/* <p><a href="tel:+911234567890">+91 12345 67890</a></p> */}
         </div>

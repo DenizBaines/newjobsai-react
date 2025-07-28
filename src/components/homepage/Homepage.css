@@ -445,42 +445,55 @@ body {
 
 .certification-logos {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 3rem;
   flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  margin-top: 2rem;
 }
 
+
 .cert-logo {
-  width: 120px;
-  height: 80px;
-  background: #ddd;
-  border-radius: 10px;
+  width: 150px;
+  height: 150px;
+  padding: 1rem;
+  box-sizing: border-box;
+  border-radius: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-weight: bold;
-  color: #666;
+  overflow: hidden;
 }
+
+.cert-logo img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
 
 .cert-logo.ftec {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
+  background: linear-gradient(135deg, #ffffff, #f2f3ff); /* white + soft tint */
+  border: 1px solid #e0e0e0; /* optional light border */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
 }
 
+
 .cert-logo.nsdc {
-  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
-  color: white;
+    background: linear-gradient(135deg, #ffffff, #f2f3ff); /* white + soft tint */
+  border: 1px solid #e0e0e0; /* optional light border */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
 }
 
 .cert-logo.skill-council {
-  background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
-  color: white;
+    background: linear-gradient(135deg, #ffffff, #f2f3ff); /* white + soft tint */
+  border: 1px solid #e0e0e0; /* optional light border */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
 }
 
 .cert-logo.nasscom {
-  background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
-  color: white;
+    background: linear-gradient(135deg, #ffffff, #f2f3ff); /* white + soft tint */
+  border: 1px solid #e0e0e0; /* optional light border */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
 }
 
 /* Features Section */

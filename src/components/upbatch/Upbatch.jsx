@@ -7,27 +7,27 @@ import { useNavigate } from 'react-router-dom';
 const batches = [
   {
     title: 'Master Certification in Data Science & AI',
-    image: 'images/upbatch/data_science.jpg',
+    image: './newjobs/images/upbatch/data_science.jpg',
   },
   {
     title: 'Proficiency in Social Media Management',
-    image: 'images/upbatch/social_media.jpg',
+    image: './newjobs/images/upbatch/social_media.jpg',
   },
   {
     title: 'Proficiency Program in Python',
-    image: 'images/upbatch/python.jpg',
+    image: './newjobs/images/upbatch/python.jpg',
   },
   {
     title: 'Master Certification in Digital Marketing & Brand Management',
-    image: 'images/upbatch/digital_marketing.jpg',
+    image: './newjobs/images/upbatch/digital_marketing.jpg',
   },
    {
     title: 'Foundation Course in Data Science & AI',
-    image: 'images/upbatch/ai.jpg',
+    image: './newjobs/images/upbatch/ai.jpg',
   },
    {
     title: 'Foundation Course in Digital Marketing',
-    image: 'images/upbatch/digital_market.jpg',
+    image: './newjobs/images/upbatch/digital_market.jpg',
   },
 ];
 
