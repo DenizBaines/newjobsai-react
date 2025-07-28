@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/newjobs/static/css/main.223066d7.css",
+    "main.js": "/newjobs/static/js/main.465d47a3.js",
+    "static/js/453.04d95277.chunk.js": "/newjobs/static/js/453.04d95277.chunk.js",
+    "static/media/digital_market.jpg": "/newjobs/static/media/digital_market.95d7cdfaeddead2131e2.jpg",
+    "static/media/data_science.jpg": "/newjobs/static/media/data_science.a8435528ee7a34bdb7a4.jpg",
+    "static/media/digital_marketing.jpg": "/newjobs/static/media/digital_marketing.82804571407babb95d08.jpg",
+    "static/media/iso3.jpg": "/newjobs/static/media/iso3.e2bce5b40e9b48f0139b.jpg",
+    "static/media/iso1.jpg": "/newjobs/static/media/iso1.5aacd5e4ea9c14050b5e.jpg",
+    "static/media/iso2.jpg": "/newjobs/static/media/iso2.f4ea7c09264d2151cb38.jpg",
+    "static/media/iso4.jpg": "/newjobs/static/media/iso4.78564c6294c2dae1bc30.jpg",
+    "static/media/iso5.jpg": "/newjobs/static/media/iso5.fee87f7a2039745212ad.jpg",
+    "index.html": "/newjobs/index.html",
+    "main.223066d7.css.map": "/newjobs/static/css/main.223066d7.css.map",
+    "main.465d47a3.js.map": "/newjobs/static/js/main.465d47a3.js.map",
+    "453.04d95277.chunk.js.map": "/newjobs/static/js/453.04d95277.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.223066d7.css",
+    "static/js/main.465d47a3.js"
+  ]
+}
